@@ -77,7 +77,8 @@ const config = {
         },
       },
       {
-        test: /\.css/,
+        test: /\.(css|scss)$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'isomorphic-style-loader',
@@ -85,13 +86,10 @@ const config = {
           {
             loader: 'css-loader',
             options: {
-              // CSS Loader https://github.com/webpack/css-loader
               importLoaders: 1,
               sourceMap: isDebug,
-              // CSS Modules https://github.com/css-modules/css-modules
               modules: true,
               localIdentName: isDebug ? '[name]-[local]-[hash:base64:5]' : '[hash:base64:5]',
-              // CSS Nano http://cssnano.co/options/
               minimize: !isDebug,
               discardComments: { removeAll: true },
             },
@@ -101,6 +99,9 @@ const config = {
             options: {
               config: './tools/postcss.config.js',
             },
+          },
+          {
+            loader: 'sass-loader',
           },
         ],
       },

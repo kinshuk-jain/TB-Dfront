@@ -1,6 +1,6 @@
 {
-  "name": "Page",
+  "name": "TopBar",
   "version": "0.0.0",
   "private": true,
-  "main": "./Page.js"
+  "main": "./TopBar.js"
 }

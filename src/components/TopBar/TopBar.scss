@@ -1,0 +1,60 @@
+@import '../variables.scss';
+
+.root {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: $White;
+  border-bottom: 1px solid $Whisper;
+  z-index: 1;
+}
+
+.link {
+  display: inline-block;
+  padding: 3px 8px;
+  text-decoration: none;
+  font-size: 1.125em; /* ~18px */
+}
+
+.link,
+.link:active,
+.link:visited {
+  color: $Cerulean;
+}
+
+.link:hover {
+  color: $MidnightBlue;
+}
+
+.highlight {
+  margin-right: 8px;
+  margin-left: 8px;
+  border-radius: 3px;
+  background: $Cerulean;
+  color: $White;
+}
+
+.highlight:hover {
+  background: $Sail;
+}
+
+.spacer {
+  color: $Whisper;
+}
+
+.brand {
+  height: 4rem;
+}
+
+.navLinks {
+  display: inline-block;
+  position: absolute;
+  right: 40px;
+  top: 20px;
+}
+
+.logo {
+  display: inline-block;
+  position: relative;
+  left: 10px;
+}

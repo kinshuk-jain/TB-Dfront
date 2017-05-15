@@ -3,13 +3,12 @@
 
 # TEAM
 
-  <name> -- <role> -- <twitter>
+  <Kinshuk jain>
 
 # THANKS
 
-  <name>
+  <Kinshuk Jain>
 
 # TECHNOLOGY COLOPHON
 
-  CSS3, HTML5, JavaScript
-  React Starter Kit -- https://reactstarter.com/
+  CSS3, HTML5, ES6, React, Redux
